@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+:root {
+  --body-font: "Fira Sans", sans-serif;
+  --bs-body-font-family: "Fira Sans", sans-serif;
+}
+
+.container-fluid {
+  width: 95%;
+}
+
+.navbar-nav {
+  --bs-nav-link-hover-color: var(--red);
+}
+
+.navbar > .container-fluid {
+  align-items: baseline;
+}
+
+.nav-link {
+  color: var(--black);
+}
+
+.nav-link:hover {
+  text-decoration: underline var(--red);
+  text-underline-offset: 6px;
+}
+
+/* Make button align nicely with other nav items */
+.nav-item.btn.btn-sm {
+  padding-block: 0;
+  font-size: var(--bs-nav-link-font-size);
+}
+
+.nav-item.btn.btn-sm a {
+  padding-block: calc(0.5rem - 1px);
+}
+
+/* *** */
+
+/* Buttons */
+.btn-outline-primary {
+  --bs-btn-color: var(--red);
+  --bs-btn-border-color: var(--red);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--red);
+  --bs-btn-hover-border-color: var(--red);
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--red);
+  --bs-btn-active-border-color: var(--red);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--red);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--red);
+  --bs-gradient: none;
+}
+
+.btn .nav-link {
+  color: var(--red);
+}
+
+.btn .nav-link:hover {
+  color: var(--bs-white);
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--red);
+  --bs-btn-border-color: var(--red);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--red-darker);
+  --bs-btn-hover-border-color: var(--red-darker);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--red-darker);
+  --bs-btn-active-border-color: var(--red-darker);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--red);
+  --bs-btn-disabled-border-color: var(--red);
+}
+
+@media (min-width: 1200px) {
+  .h1,
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+  }
+}
