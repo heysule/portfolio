@@ -46,7 +46,7 @@ img {
 .hero-salute::after {
   content: "";
   display: block;
-  width: 100px;
+  width: 85px;
   height: 10px;
   background-color: var(--red);
 }
@@ -58,7 +58,7 @@ img {
 .title-underline::after {
   content: "";
   display: block;
-  width: 40px;
+  width: 30px;
   height: 2px;
   background-color: var(--red);
 }
@@ -74,4 +74,11 @@ img {
 
 .margin-y {
   margin-block: 6em;
+}
+
+@media (max-width: 700px) {
+  h1 img {
+    width: 36px;
+    height: 36px;
+  }
 }
